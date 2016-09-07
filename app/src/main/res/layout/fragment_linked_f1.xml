@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yee.mcloudprojects.fragment.Linked_f1">
+
+
+
+        <!--<include layout="@layout/refresh_head" />-->
+
+        <ListView
+            android:id="@+id/country_lvcountry"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarSize="@null"
+            android:scrollbars="none"
+            android:divider="@null" />
+        <!--<com.example.yee.mcloudprojects.view.WaveSideBarView
+
+         android:id="@+id/side_view"
+         android:layout_width="match_parent"
+        android:layout_height="match_parent" />-->
+
+
+
+
+</RelativeLayout>

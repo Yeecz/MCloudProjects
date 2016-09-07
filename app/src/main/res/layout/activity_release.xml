@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="15dp"
+    android:background="@color/whites"
+    tools:context=".activity.ReleaseActivity">
+
+    <RelativeLayout
+        android:id="@+id/release_top"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <com.example.yee.mcloudprojects.CircleImageView
+            android:id="@+id/release_user_pic"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/avatar_default"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/release_title"/>
+
+        <ImageView
+            android:id="@+id/release_close"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_cc_nav_dismiss"/>
+
+    </RelativeLayout>
+
+
+
+    <EditText
+        android:id="@+id/release_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dip"
+        android:hint="@string/release_hint"
+        android:background="@drawable/btn_radio"
+        android:gravity="top|left"
+        android:maxLength="200"
+        android:textSize="@dimen/release_hint_size"
+        android:layout_below="@id/release_top"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="10dp"
+        android:id="@+id/release_pics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/release_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:layout_below="@+id/release_pics"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/release_loaction"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/line_et_focuse">
+
+        <ImageButton
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/release_btn_loaction"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_compose_action_geo_active_default"/>
+
+        <TextView
+            android:layout_toRightOf="@id/release_btn_loaction"
+            android:id="@+id/release_loc_text"
+            android:text="@string/release_loc_text"
+            android:layout_centerVertical="true"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/release_loaction"
+        android:id="@+id/release_footer"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/line_et_focuse">
+
+        <ImageButton
+            android:id="@+id/release_footer_addpic"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/compose_album_btn"/>
+
+
+        <ImageButton
+            android:visibility="gone"
+            android:id="@+id/release_footer_mention"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/release_footer_addpic"
+            android:src="@drawable/compose_mentionbutton_background"/>
+
+        <Button
+
+            android:background="@drawable/btn_radio"
+            android:layout_alignParentEnd="true"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:text="@string/release_btn_text"/>
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/release_footer_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_send_white_48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        app:backgroundTint="@color/btn_fab_blue"
+        app:borderWidth="0dp"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        app:rippleColor="@color/btn_fab_white"/>
+
+
+</RelativeLayout>

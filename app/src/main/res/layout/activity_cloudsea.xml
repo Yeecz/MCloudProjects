@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cloudsea_body"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+
+    <RelativeLayout
+        android:id="@+id/cloudsea_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/cloudsea_footergroup">
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/cloudsea_footergroup"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@drawable/blockdivide"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="2dp">
+
+        <RadioButton
+            android:id="@+id/footer_cloudsea"
+            style="@style/main_tab_bottom"
+            android:checked="true"
+            android:drawableTop="@drawable/cloudsea"
+            android:text="@string/app_footer_cloudsea" />
+
+        <RadioButton
+            android:id="@+id/footer_cloudrun"
+            style="@style/main_tab_bottom"
+            android:checked="false"
+            android:drawableTop="@drawable/cloudrun"
+            android:text="@string/app_footer_cloudrun" />
+
+        <RadioButton
+            android:id="@+id/footer_cloudhome"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/cloudhome"
+            android:text="@string/app_footer_cloudhome" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/cloudsea_replace_showimagefragment"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+
+</RelativeLayout>

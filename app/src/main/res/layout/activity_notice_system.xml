@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yee.mcloudprojects.activity.NoticeSystem">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:id="@+id/cloudsea_top"
+        android:gravity="center"
+        android:background="#01ACED"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true">
+        <ImageButton
+            android:layout_weight="1"
+            android:id="@+id/backbutton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_selector"
+            android:src="@drawable/back1" />
+        <TextView
+            android:textColor="@color/btn_fab_white"
+            android:id="@+id/text_in"
+            android:gravity="center"
+            android:layout_weight="9"
+            android:layout_height="40dp"
+            android:layout_width="wrap_content"
+            android:textSize="18sp"
+            android:text="系统通知"/>
+        <TextView
+            android:id="@+id/text_i2"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/R1"
+        android:background="@drawable/rel_selector"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_height="45dp"
+        >
+        <TextView
+            android:id="@+id/TV1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="陌云6.8.30主要更新"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(8月30日)"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/TV1"
+            android:layout_marginLeft="20dp"/>
+
+        <ImageView
+            android:background="@drawable/rel_selector"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/right"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.Fridents_list">
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@drawable/cloudsea_topbar"
+        android:id="@+id/cloudsea_top"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical">
+
+        <com.example.yee.mcloudprojects.CircleImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/user_tx"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dip"
+            android:layout_centerVertical="true"
+            android:src="@drawable/cloud_user_sliding"/>
+<!--
+        <RadioGroup
+            android:id="@+id/group"
+            android:layout_width="155dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_centerHorizontal="true">
+
+            <RadioButton
+                android:id="@+id/group1"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:button="@null"
+                android:text="联系人"
+                android:checked="true"
+                android:background="@drawable/linked_left"
+                />
+            <RadioButton
+                android:id="@+id/group2"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:button="@null"
+                android:text="云社 "
+                android:background="@drawable/linked_right"
+                />
+        </RadioGroup>
+-->
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="联系人"
+            android:textSize="18sp" />
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:id="@+id/cloud_search"
+            android:background="#FFFFFF"
+            android:gravity="center"
+
+            android:layout_marginRight="10dip"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/jiahao2" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/midle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/cloudsea_top"
+        android:layout_alignParentStart="true">
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>
+

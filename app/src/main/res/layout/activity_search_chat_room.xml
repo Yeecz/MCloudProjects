@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yee.mcloudprojects.activity.SearchChatRoomActivity">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:gravity="center_vertical"
+        android:background="@drawable/blockdivide">
+
+        <ImageButton
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:id="@+id/searchchat_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/userinfo_tabicon_back"
+            android:layout_weight="1"/>
+
+
+        <EditText
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/searchchat_conkey"
+            android:layout_width="0dp"
+            android:textSize="14sp"
+            android:hint="搜索云社号"
+            android:background="@drawable/line_et_bg"
+            android:drawableLeft="@drawable/tabbar_discover"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"/>
+
+        <Button
+            android:layout_centerVertical="true"
+            style="@style/history_btn_add"
+            android:id="@+id/searchchat_search"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_width="0dp"
+            android:text="@string/release_location_text"
+            android:textSize="16sp"
+            android:layout_height="30dp"
+            android:layout_weight="2"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/searchchat_lv"
+        android:divider="@null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+</LinearLayout>

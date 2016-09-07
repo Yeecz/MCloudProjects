@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.yee.mcloudprojects.activity.NewAlbumActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#303F9F">
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:background="@null"
+            android:text="返回"
+            android:textColor="#DFF6FE"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/function"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="新建相册"
+            android:textColor="#F0FBFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/conservation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="#3644A2"
+            android:text="保存"
+            android:textColor="#DFF6FE"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/album_background">
+    <EditText
+        android:id="@+id/album_name_n"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:hint="相册标题"
+        android:textColor="#C3C3C3"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:background="@null">
+        <requestFocus/>
+    </EditText>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ECECEC"
+        android:id="@+id/view1"
+        android:layout_marginLeft="10dp"
+        />
+    <EditText
+        android:id="@+id/album_describe"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="top"
+        android:hint="相册描述"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:textColor="#C3C3C3"
+        android:textSize="18sp"
+        android:background="@null"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ECECEC"
+        android:id="@+id/view2"
+        />
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/authority"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="谁能看见:"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/authority_result"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="所有人"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:layout_toEndOf="@id/authority"
+            android:layout_marginLeft="100dp"
+            android:visibility="gone"/>
+    <RadioGroup
+        android:id="@+id/authority_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/authority"
+       >
+
+        <RadioButton
+            android:id="@+id/authority_all_people"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:button="@null"
+            android:drawableRight="@android:drawable/btn_radio"
+            android:text="所有人"
+            android:textSize="16sp"
+            android:paddingLeft="80dp"
+            android:paddingRight="10dp"
+            android:checked="true"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ECECEC"
+            android:id="@+id/view3"
+            />
+        <RadioButton
+            android:id="@+id/authority_friends"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:button="@null"
+            android:drawableRight="@android:drawable/btn_radio"
+            android:paddingLeft="80dp"
+            android:paddingRight="10dp"
+            android:text="陌云好友"
+            android:textSize="16sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ECECEC"
+            android:id="@+id/view4"
+            />
+        <RadioButton
+            android:id="@+id/authority_myself"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:button="@null"
+            android:drawableRight="@android:drawable/btn_radio"
+            android:paddingLeft="80dp"
+            android:paddingRight="10dp"
+            android:text="仅自己"
+            android:textSize="16sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ECECEC"
+            android:id="@+id/view5"
+            />
+    </RadioGroup>
+    </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

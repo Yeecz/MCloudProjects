@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    tools:context="com.example.yee.mcloudprojects.activity.Install">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:id="@+id/cloudsea_top"
+        android:gravity="center"
+        android:background="#01ACED"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true">
+        <ImageButton
+            android:layout_weight="1"
+            android:id="@+id/backbutton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_selector"
+            android:src="@drawable/back1" />
+        <TextView
+            android:textColor="@color/btn_fab_white"
+            android:id="@+id/text_in"
+            android:gravity="center"
+            android:layout_weight="9"
+            android:layout_height="40dp"
+            android:layout_width="wrap_content"
+            android:textSize="18sp"
+            android:text="设置"/>
+        <TextView
+            android:id="@+id/text_i2"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+
+    </LinearLayout>
+    <ScrollView
+        android:background="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/cloudsea_top"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" >
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/R1"
+                android:layout_weight="1"
+                android:background="@drawable/biankuang_white"
+                android:layout_width="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_height="45dp"
+                >
+                <ImageView
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/IV1"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:src="@drawable/c1"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:textColor="#A0A1A1"
+                    android:layout_toRightOf="@+id/IV1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="16sp"
+                    android:text="账号管理"/>
+
+                <TextView
+                    android:id="@+id/TV4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13788978399"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/R2"
+                android:layout_weight="1"
+                android:background="@drawable/biankuang_white"
+                android:layout_width="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_height="45dp"
+                >
+                <ImageView
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/IV2"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:src="@drawable/telphone"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@id/TV2"
+                    android:textColor="#a0a1a1"
+                   android:layout_toRightOf="@id/IV2"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="16sp"
+                    android:text="手机号码"/>
+                <TextView
+                    android:id="@+id/TV3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13788978399"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"/>
+
+
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:background="#F2F2F2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+                <TextView
+                    android:textColor="#a0a1a1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="消息"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/R3"
+                android:layout_weight="1"
+                android:background="@drawable/biankuang_white"
+                android:layout_width="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_height="45dp"
+                >
+                <ImageView
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/IV3"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:src="@drawable/c3"
+                    android:layout_centerVertical="true"/>
+                <TextView
+                    android:layout_toRightOf="@+id/IV3"
+                    android:textColor="#a0a1a1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="16sp"
+                    android:text="通知"/>
+                <Switch
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/void_notification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:checked="false"/>
+
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/R7"
+                android:layout_weight="1"
+                android:background="@drawable/biankuang_white"
+                android:layout_width="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_height="45dp"
+                >
+                <ImageView
+                    android:layout_marginLeft="1dp"
+                    android:id="@+id/IV6"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/voice"
+                    android:layout_centerVertical="true"/>
+                <TextView
+                    android:layout_toRightOf="@+id/IV6"
+                    android:textColor="#a0a1a1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="16sp"
+                    android:text="声音"/>
+                <Switch
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/voice_notification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:checked="false"/>
+
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/R6"
+                android:layout_weight="1"
+                android:background="@drawable/biankuang_white"
+                android:layout_width="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_height="45dp"
+                >
+                <ImageView
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/IV7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/shock"
+                    android:layout_centerVertical="true"/>
+                <TextView
+                    android:layout_toRightOf="@+id/IV7"
+                    android:textColor="#a0a1a1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="16sp"
+                    android:text="震动"/>
+                <Switch
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/shock_notification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:checked="false"
+                    />
+
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:background="#F2F2F2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+                <TextView
+                    android:textColor="#a0a1a1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="夜间"
+                    />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/R5"
+                android:layout_weight="1"
+                android:background="@drawable/biankuang_white"
+                android:layout_width="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_height="45dp"
+                >
+                <ImageView
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/IV5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/night"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:layout_toRightOf="@+id/IV5"
+                    android:textColor="#a0a1a1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="16sp"
+                    android:text="夜间模式"/>
+
+                <Switch
+
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/tb1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:checked="false"/>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

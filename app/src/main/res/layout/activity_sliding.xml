@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp" android:layout_height="match_parent"
+    android:id="@+id/rl_sliding"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:id="@+id/cloud_sliding"
+        android:layout_gravity="start"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+
+        <com.example.yee.mcloudprojects.CircleImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mcloud_tx"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/history_id_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/cloud_user_sliding"
+            android:adjustViewBounds="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cloudsliding_username"
+            android:textSize="24sp"
+            android:id="@+id/mcloud_name"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/mcloud_tx"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="“ 大家好，我是陌云”"
+            android:layout_marginTop="10dp"
+            android:id="@+id/mcloud_chat"
+            android:layout_below="@+id/mcloud_name"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/mcloud_people"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/mcloud_chat"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/mcloud_people_num"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:id="@+id/mcloud_people_num_album"
+                    android:gravity="center_horizontal"
+                    android:text="12"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:id="@+id/mcloud_people_num_follower"
+                    android:gravity="center_horizontal"
+                    android:text="12"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:id="@+id/mcloud_people_num_fans"
+                    android:gravity="center_horizontal"
+                    android:text="12"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/mcloud_people_type"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/mcloud_people_album"
+                    android:gravity="center_horizontal"
+                    android:text="@string/cloudsliding_people_type_album"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/mcloud_people_follower"
+                    android:gravity="center_horizontal"
+                    android:text="@string/cloudsliding_people_type_follower"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/mcloud_people_fans"
+                    android:gravity="center_horizontal"
+                    android:text="@string/cloudsliding_people_type_fans"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#12B7F5"
+        >
+    <RelativeLayout
+       android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@+id/R1">
+
+        <ImageView
+            android:id="@+id/IV1"
+            android:layout_width="wrap_content"
+            android:src="@drawable/mymessage"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="个人中心"
+            android:layout_centerVertical="true"
+            android:textColor="#ffffff"
+            android:textSize="23dp"
+            android:layout_toRightOf="@+id/IV1"
+            android:layout_marginLeft="20dp"
+            />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:id="@+id/R2"
+            android:layout_below="@+id/R1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/gy"
+                android:layout_marginLeft="8dp"
+                android:id="@+id/IV2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="关于软件"
+                android:layout_centerVertical="true"
+                android:textColor="#ffffff"
+                android:textSize="23dp"
+                android:layout_toRightOf="@+id/IV2"
+                android:layout_marginLeft="20dp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:id="@+id/R3"
+            android:layout_below="@+id/R2">
+
+            <ImageView
+                android:id="@+id/IV3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sz"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设置"
+                android:layout_centerVertical="true"
+                android:textColor="#ffffff"
+                android:textSize="23dp"
+                android:layout_toRightOf="@+id/IV3"
+                android:layout_marginLeft="20dp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:id="@+id/R4"
+            android:layout_below="@+id/R3">
+
+            <ImageView
+                android:id="@+id/IV4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tcdl"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="退出登录"
+                android:layout_centerVertical="true"
+                android:textColor="#ffffff"
+                android:textSize="23dp"
+                android:layout_toRightOf="@+id/IV4"
+                android:layout_marginLeft="20dp"
+                />
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    </LinearLayout>
+
+
+
+

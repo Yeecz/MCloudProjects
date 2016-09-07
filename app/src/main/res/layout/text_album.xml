@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingLeft="12dp"
+    >
+
+    <ImageView
+        android:id="@+id/album_cover"
+        android:layout_width="match_parent"
+        android:layout_height="185dp"
+        android:src="@drawable/photo"
+        android:scaleType="centerCrop"
+        android:background="@drawable/bg_border"
+        />
+    <TextView
+        android:id="@+id/album_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/album_cover"
+        android:layout_alignLeft="@id/album_cover"
+        android:text="说说和日志相册"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"/>
+    <TextView
+        android:id="@+id/album_numbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/album_name"
+        android:layout_alignLeft="@id/album_name"
+        android:text="32张"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/album_authority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/album_numbers"
+        android:layout_below="@id/album_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:text="仅自己可见"
+        android:textSize="16sp"
+        android:visibility="gone"/>
+</RelativeLayout>

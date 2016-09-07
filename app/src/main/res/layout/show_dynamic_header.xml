@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="16dp"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.yee.mcloudprojects.CircleImageView
+            android:id="@+id/show_dynamic_header_tx"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/avatar_default"></com.example.yee.mcloudprojects.CircleImageView>
+
+        <TextView
+            android:id="@+id/show_dynamic_header_username"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignTop="@+id/show_dynamic_header_tx"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@+id/show_dynamic_header_tx"
+            android:gravity="center"
+            android:text="@string/history_id_username"
+            android:textColor="@color/history_id_username"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/show_dynamic_header_time"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_alignLeft="@+id/show_dynamic_header_username"
+            android:layout_below="@+id/show_dynamic_header_username"
+            android:text="@string/history_id_time"
+            android:textColor="@color/history_id_time"
+            android:textSize="11sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/show_dynamic_header_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:maxLines="5"
+        android:text="@string/history_id_content"
+        android:textSize="16sp" />
+
+    <com.jaeger.ninegridimageview.NineGridImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:visibility="gone"
+        android:id="@+id/show_dynamic_header_pics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        app:imgGap="4dip"
+        app:showStyle="grid"
+        app:singleImgSize="180dp"></com.jaeger.ninegridimageview.NineGridImageView>
+
+    <RelativeLayout
+        android:id="@+id/show_dynamic_header__location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/show_dynamic_header_pics"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:id="@+id/show_dynamic_header_location_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_compose_action_geo_pressed"/>
+
+        <TextView
+            android:layout_toRightOf="@id/show_dynamic_header_location_img"
+            android:id="@+id/show_dynamic_header_location_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="显示位置"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:background="@drawable/blockdivide"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="评论墙"/>
+    </RelativeLayout>
+</LinearLayout>

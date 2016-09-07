@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="com.example.yee.mcloudprojects.activity.LeafletPhotoShowActivity">
+
+    <RelativeLayout
+        android:id="@+id/r_relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageButton
+            android:id="@+id/back_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:src="@mipmap/back_photo" />
+
+        <RelativeLayout
+            android:layout_width="220dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/album_name3"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:text="相册名称就考虑的家啊扩大口径的v"
+                android:textColor="#F0FBFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/photo_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/album_name3"
+                android:layout_centerHorizontal="true"
+                android:text="6/53"
+                android:textSize="20sp"
+                android:textColor="#F0FBFF"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/r_frameLayout"
+        android:layout_below="@id/r_relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"></FrameLayout>
+
+    <TextView
+        android:layout_width="210dp"
+        android:layout_height="match_parent"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="#F0FBFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="大学也就这几张照片啦好"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/r_frameLayout"/>W
+
+    <FrameLayout
+        android:id="@+id/r_frameLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="380dp"
+        android:layout_marginTop="60dp">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/photo_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+</RelativeLayout>

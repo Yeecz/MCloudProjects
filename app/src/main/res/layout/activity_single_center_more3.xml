@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.yee.mcloudprojects.activity.SingleCenter_more3">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:id="@+id/cloudsea_top"
+        android:gravity="center"
+        android:background="#01ACED"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true">
+        <ImageButton
+            android:layout_weight="1"
+            android:id="@+id/backbutton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_selector"
+            android:src="@drawable/back1" />
+        <TextView
+            android:textColor="@color/btn_fab_white"
+            android:id="@+id/text_in"
+            android:gravity="center"
+            android:layout_weight="9"
+            android:layout_height="40dp"
+            android:layout_width="wrap_content"
+            android:textSize="18sp"
+            android:text="账号信息"/>
+        <TextView
+            android:id="@+id/text_i2"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:background="#f2f2f2">
+        <TextView
+            android:id="@id/TV1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你已绑定手机号码"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/TV2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6354287648"
+            android:layout_below="@id/TV1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="25dp"/>
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TV2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="更换"
+            android:textSize="18dp"
+            />
+
+
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:background="#f2f2f2">
+        <TextView
+            android:id="@+id/TV1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="陌云软件许可及服务协议"
+            android:layout_centerInParent="true"
+            android:textSize="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TV1"
+            android:text="陌云团队"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+    </RelativeLayout>
+</LinearLayout>

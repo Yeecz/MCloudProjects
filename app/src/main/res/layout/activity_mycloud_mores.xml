@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    tools:context="com.example.yee.mcloudprojects.activity.Mycloud_moresActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:id="@+id/cloudsea_top"
+        android:gravity="center"
+        android:background="#01aced"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true">
+        <ImageButton
+            android:layout_weight="1"
+            android:id="@+id/backbutton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:src="@drawable/back1" />
+        <TextView
+            android:textColor="@color/btn_fab_white"
+            android:id="@+id/text_in"
+            android:gravity="center"
+            android:layout_weight="9"
+            android:layout_height="40dp"
+            android:layout_width="wrap_content"
+            android:textSize="18sp"
+            android:text="个人信息"/>
+        <TextView
+            android:id="@+id/text_i2"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+
+    <ScrollView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/cloudsea_top"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:background="#FFFFFF"
+                android:layout_marginTop="1dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:textColor="@color/smssdk_black"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:textSize="18sp"
+                    android:text="昵称"/>
+
+                <TextView
+                    android:id="@+id/nametext1"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:textSize="16sp"
+                    android:text="太阳"/>
+            </LinearLayout>
+        <LinearLayout
+            android:background="#FFFFFF"
+            android:layout_marginTop="1dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/xiangxi"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:textColor="@color/smssdk_black"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/nt1"
+                android:gravity="center_vertical"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:textSize="18sp"
+                android:text="详细信息"/>
+
+            <ImageView
+                android:layout_weight="2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/abc_ic_go_search_api_material"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/beizhu"
+            android:background="#FFFFFF"
+            android:layout_marginTop="1dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:textColor="@color/smssdk_black"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/nt2"
+                android:gravity="center_vertical"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:textSize="18sp"
+                android:text="备注"/>
+               <TextView
+                   android:id="@+id/nowbeizhu"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="当前的备注"
+                   />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="40dp"
+                android:src="@drawable/abc_ic_go_search_api_material" />
+        </LinearLayout>
+            <LinearLayout
+                android:id="@+id/dongtaishezhi"
+                android:background="#FFFFFF"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:textColor="@color/smssdk_black"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/nt3"
+                    android:gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:textSize="18sp"
+                    android:text=""/>
+
+
+            </LinearLayout>
+            <LinearLayout
+               android:id="@+id/yaoqing"
+                android:background="#FFFFFF"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+
+                android:gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/smssdk_black"
+                    android:gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:textSize="18sp"
+                    android:text=""/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:background="#FFFFFF"
+                android:layout_marginTop="50dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+
+                android:gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true">
+         <Button
+             android:id="@+id/shanch"
+             android:layout_marginLeft="30dp"
+             android:layout_marginRight="30dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="删除好友"
+             android:textSize="20sp"
+             android:textColor="@drawable/delte_btn_text"
+             android:background="@drawable/delete_btn"
+             />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

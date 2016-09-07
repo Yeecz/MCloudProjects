@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yee.mcloudprojects.fragment.MessagesFragment">
+
+    <RelativeLayout
+        android:id="@+id/cloudrun_top"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:background="@drawable/cloudsea_topbar">
+
+        <com.example.yee.mcloudprojects.CircleImageView
+            android:id="@+id/cloudrun_user_tx"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dip"
+            android:layout_centerVertical="true"
+            android:src="@drawable/cloud_user_sliding" />
+
+        <TextView
+            android:id="@+id/cloudrun_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="我的消息"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/cloudrun_top_msg"
+            android:clickable="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/msg_topbar"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <!-- TODO: Update blank fragment layout -->
+    <fragment
+        android:layout_below="@id/cloudrun_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="io.rong.imkit.fragment.ConversationListFragment"
+        android:id="@+id/cloudrun_messages"/>
+
+</RelativeLayout>

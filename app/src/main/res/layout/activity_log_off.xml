@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yee.mcloudprojects.activity.LogOff"
+    android:orientation="vertical"
+    android:id="@+id/L1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:id="@+id/cloudsea_top"
+        android:gravity="center"
+        android:background="#01ACED"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true">
+        <ImageButton
+            android:layout_weight="1"
+            android:id="@+id/backbutton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_selector"
+            android:src="@drawable/back1" />
+        <TextView
+            android:textColor="@color/btn_fab_white"
+            android:id="@+id/text_in"
+            android:gravity="center"
+            android:layout_weight="9"
+            android:layout_height="40dp"
+            android:layout_width="wrap_content"
+            android:textSize="18sp"
+            android:text="退出登录"/>
+        <TextView
+            android:id="@+id/text_i2"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@id/R1"
+        android:background="@drawable/biankuang"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.example.yee.mcloudprojects.CircleImageView
+
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/cloudsea_container_history_id_image"
+            android:layout_gravity="center_horizontal|bottom"
+            android:id="@+id/touxian" />
+        <TextView
+            android:id="@+id/TV1"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MCloud"
+            android:layout_toRightOf="@+id/touxian"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/TV2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TV1"
+            android:text="756392019"
+            android:layout_toRightOf="@+id/touxian"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@id/R2"
+        android:background="@drawable/biankuang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/IV1"
+            android:src="@drawable/tianjia"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+           android:layout_marginLeft="23dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加账号"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/IV1"
+            android:layout_marginLeft="20dp"
+            android:textSize="18dp"
+            android:textColor="#01ACED"/>
+
+
+    </RelativeLayout>
+
+
+
+
+<RelativeLayout
+android:id="@id/R3"
+android:background="@drawable/biankuang"
+android:layout_width="match_parent"
+android:layout_height="40dp"
+    android:layout_marginTop="20dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="退出当前账号"
+        android:layout_centerVertical="true"
+        android:textColor="#000000"
+        android:layout_marginLeft="10dp"
+        android:textSize="18dp"/>
+    </RelativeLayout>
+
+
+
+
+
+
+
+</LinearLayout>

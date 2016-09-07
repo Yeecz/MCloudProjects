@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.yee.mcloudprojects">
+
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- the following two permissions are required if you want to take photo in selector -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/mcloud_logo_light"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="Yrr2BF74lvkrd4Qr7DWD5eOaZmWuE8eP" />
+
+        <activity
+            android:name="me.iwf.photopicker.PhotoPickerActivity"
+            android:theme="@style/customTheme" />
+        <activity
+            android:name="me.iwf.photopicker.PhotoPagerActivity"
+            android:theme="@style/customTheme" />
+        <activity
+            android:name=".activity.Login"
+            android:theme="@style/AppThemeNA" />
+        <activity
+            android:name=".activity.Loading"
+            android:theme="@style/AppThemeNA">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CloudSeaModuleActivity"
+            android:theme="@style/AppThemeNA"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.example.yee.mcloudprojects"
+                    android:pathPrefix="/conversationlist"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ReleaseActivity"
+            android:theme="@style/AppThemeNA" />
+        <activity
+            android:name=".activity.ChooseLocActivity"
+            android:theme="@style/AppThemeNA"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.User_data_Activity"
+            android:theme="@style/AppThemeNA" />
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".activity.Mycloud_more1_Activity" />
+        <activity android:name=".activity.Mycloud_more2_Activity" />
+        <activity android:name=".activity.Mycloud_moresActivity" />
+        <activity android:name=".activity.Mycloud_more3_Activity" />
+        <activity android:name=".activity.Mycloud_more4_Activity" />
+        <activity
+            android:name=".activity.BangDingYanZheng"
+            android:theme="@style/AppThemeJX" />
+        <activity
+            android:name=".activity.ForgetPassword"
+            android:theme="@style/AppThemeJX" />
+        <activity
+            android:name=".activity.ResetPassword"
+            android:theme="@style/AppThemeJX" />
+        <activity android:name=".activity.Sliding" />
+        <activity
+            android:name=".activity.SingleCenter"
+            android:theme="@style/AppThemeJX" />
+        <activity
+            android:name=".activity.SingleCenter_more1"
+            android:theme="@style/AppThemeJX" />
+        <activity
+            android:name=".activity.SingleCenter_more2"
+            android:theme="@style/AppThemeJX" />
+        <activity
+            android:name=".activity.SingleCenter_more3"
+            android:theme="@style/AppThemeJX" />
+        <activity android:name=".activity.SearchActivity" />
+        <activity
+            android:name=".activity.SingleCenter_more4"
+            android:theme="@style/AppThemeJX" />
+        <activity
+            android:name=".activity.SingleCenter_more5"
+            android:theme="@style/AppThemeJX" />
+        <activity
+            android:name=".activity.AboutSoftware"
+            android:theme="@style/AppThemeJX" />
+        <activity
+            android:name=".activity.Install"
+            android:theme="@style/AppThemeJX" />
+        <activity
+            android:name=".activity.LogOff"
+            android:theme="@style/AppThemeJX" />
+        <activity
+            android:name=".activity.MyConcern"
+            android:theme="@style/AppThemeJX" />
+        <activity
+            android:name=".activity.BulidgroupActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.ShowDynamicActivity"
+            android:theme="@style/AppThemeNA" />
+        <activity
+            android:name=".activity.Register"
+            android:theme="@style/AppThemeNA" />
+        <activity
+            android:name=".activity.RegisterPage"
+            android:theme="@style/AppThemeNA" />
+        <activity android:name=".activity.AddfridentActivity" />
+        <activity android:name=".activity.Myfans_Activity" />
+        <activity android:name=".activity.TextActivity" />
+        <activity android:name=".activity.ShowAlbumActivity" />
+        <activity android:name=".activity.NewAlbumActivity" />
+        <activity android:name=".activity.LeafletPhotoShowActivity" />
+        <activity android:name=".activity.ChatRongActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.example.yee.mcloudprojects"
+                    android:pathPrefix="/conversation/"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.SubChatRongActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.example.yee.mcloudprojects"
+                    android:pathPrefix="/subconversationlist"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MCloudSystemActivity"
+            android:theme="@style/CustomToolBar" />
+
+        <receiver
+            android:name=".RongNotificationReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="io.rong.push.intent.MESSAGE_ARRIVED" />
+                <action android:name="io.rong.push.intent.MI_MESSAGE_ARRIVED" />
+                <action android:name="io.rong.push.intent.MESSAGE_CLICKED" />
+                <action android:name="io.rong.push.intent.MI_MESSAGE_CLICKED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".activity.MyChatRoomActivity" />
+        <activity
+            android:name=".activity.SearchChatRoomActivity"
+            android:theme="@style/AppThemeNA"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.Function"
+            android:theme="@style/AppThemeJX" />
+        <activity
+            android:name=".activity.NoticeSystem"
+            android:theme="@style/AppThemeJX" />
+        <activity
+            android:name=".activity.NoticeSystem2"
+            android:theme="@style/AppThemeJX" />
+        <activity android:name=".activity.WelcomePage"
+            android:theme="@style/AppThemeJX"></activity>
+
+        <activity android:name=".activity.UploadPhotoActivity"
+            android:theme="@style/AppThemeNA"/>
+    </application>
+
+</manifest>

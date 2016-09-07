@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+
+            <com.example.yee.mcloudprojects.CircleImageView
+                android:id="@+id/chatroom_icon"
+                android:layout_marginLeft="20dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+
+            <LinearLayout
+                android:id="@+id/chatroom_top"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_alignTop="@id/chatroom_icon"
+                android:layout_toRightOf="@id/chatroom_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="云社名："/>
+
+                <TextView
+                    android:id="@+id/chatroom_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:maxLength="5"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:text="名称"/>
+
+                <TextView
+                    android:id="@+id/chatroom_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(100001)"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:layout_alignLeft="@id/chatroom_top"
+                android:layout_below="@id/chatroom_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="创建者："/>
+
+                <TextView
+                    android:id="@+id/chatroom_creator"
+                    android:layout_toRightOf="@id/chatroom_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="用户名"/>
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

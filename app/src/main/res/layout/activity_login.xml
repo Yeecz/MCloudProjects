@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yee.mcloudprojects.activity.Login">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:background="@drawable/login_bg"/>
+
+    <RelativeLayout
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="80dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="5dp"
+            android:text="帐号"
+            android:id="@+id/tnumber"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColor="#ffffff"
+            android:layout_toRightOf="@id/tnumber"
+            android:layout_above="@+id/xian1"
+            android:layout_marginRight="15dp"
+            android:maxLength="11"
+            android:id="@+id/etnumber"
+            android:background="@null"
+            android:gravity="center"
+            android:singleLine="true"
+            android:hint="帐号/手机号码"
+
+            android:textColorHint="#99ffffff"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/xian1"
+            android:background="#ffffff"
+            android:layout_below="@id/tnumber"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/xian1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:text="密码"
+            android:id="@+id/tpassword"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:layout_marginRight="15dp"
+            android:textColor="#ffffff"
+            android:layout_toRightOf="@id/tpassword"
+            android:layout_above="@+id/xian2"
+            android:id="@+id/etpassword"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="请输入密码"
+            android:singleLine="true"
+            android:maxLength="16"
+            android:textColorHint="#99ffffff"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="#ffffff"
+            android:id="@+id/xian2"
+            android:layout_below="@id/tpassword"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/but_forgetpwd"
+            android:background="@null"
+            android:text="忘记密码？"
+            android:textColor="#ffffff"
+            android:layout_below="@id/xian2"
+            android:layout_alignRight="@id/xian2"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/but_login"
+            android:layout_marginTop="50dp"
+            android:textSize="20sp"
+            android:text="登 陆"
+            android:textColor="#ffffff"
+            android:layout_below="@id/xian2"
+            android:layout_alignRight="@id/xian2"
+            android:background="#44ffffff"/>
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:id="@+id/but_register"
+            android:text="注册帐号"
+            android:textColor="#ffffff"
+            android:background="#44ffffff"
+            android:layout_above="@id/etnumber"
+            android:layout_alignRight="@id/xian2"
+            android:layout_marginBottom="10dp"/>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

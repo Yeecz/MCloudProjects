@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cloudsea_item_body_content"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/whites"
+    android:paddingTop="5dp">
+
+    <com.example.yee.mcloudprojects.CircleImageView
+        android:id="@+id/history_id_tx"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/cloudsea_container_history_id_image"></com.example.yee.mcloudprojects.CircleImageView>
+
+    <TextView
+        android:id="@+id/history_id_username"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/history_id_tx"
+        android:layout_marginStart="10dp"
+        android:layout_toRightOf="@+id/history_id_tx"
+        android:gravity="center"
+        android:text="@string/history_id_username"
+        android:textColor="@color/history_id_username"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/history_id_time"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_alignLeft="@+id/history_id_username"
+        android:layout_below="@+id/history_id_username"
+        android:text="@string/history_id_time"
+        android:textColor="@color/history_id_time"
+        android:textSize="11sp" />
+
+    <Button
+        android:id="@+id/history_id_btn_follow"
+        style="@style/history_btn_add"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/history_btn_add"
+        android:focusable="false"
+        android:gravity="center"
+        android:text="+"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/history_id_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/history_id_tx"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:maxLines="5"
+        android:text="@string/history_id_content"
+        android:textSize="16sp" />
+
+
+
+    <com.jaeger.ninegridimageview.NineGridImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="#ECECEC"
+        android:id="@+id/history_id_pics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/history_id_content"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginTop="5dp"
+        app:imgGap="4dip"
+        app:showStyle="grid"
+        app:singleImgSize="180dp"></com.jaeger.ninegridimageview.NineGridImageView>
+
+    <RelativeLayout
+        android:id="@+id/history_id_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/history_id_pics"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:id="@+id/history_id_location_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_compose_action_geo_pressed"/>
+
+        <TextView
+            android:layout_toRightOf="@id/history_id_location_img"
+            android:id="@+id/history_id_location_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="显示位置"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/history_id_function"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/history_id_location"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/history_btn_function">
+
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/history_id_function_retweet"
+            style="@style/history_btn_function"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:drawableLeft="@drawable/history_btn_function_retweet"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:text="20" />
+
+        <Button
+            android:id="@+id/history_id_function_chat"
+            style="@style/history_btn_function"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:drawableLeft="@drawable/history_btn_function_chat"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="70dp"
+            android:text="20" />
+
+        <Button
+            android:id="@+id/history_id_function_zan"
+            style="@style/history_btn_function"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:drawableLeft="@drawable/history_btn_function_zan"
+            android:layout_centerVertical="true"
+            android:text="20"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="70dp"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

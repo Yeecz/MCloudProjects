@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yee.mcloudprojects.activity.BangDingYanZheng">
+    <LinearLayout
+        android:background="#01ACED"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:id="@+id/L1"
+        >
+        <ImageButton
+            android:id="@+id/ib"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:background="@drawable/back"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:backgroundTint="#ffffff"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更换绑定号码"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="105dp"
+            android:textSize="23dp"
+            android:textColor="#ffffff"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/TV1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机号码 :"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="100dp"
+            android:textSize="22dp"/>
+
+        <EditText
+            android:id="@+id/ET1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/TV1"
+            android:layout_toRightOf="@+id/TV1"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/TV2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="验证码 :"
+            android:layout_below="@+id/TV1"
+            android:textSize="22dp"
+            android:layout_marginTop="50dp"/>
+        <EditText
+            android:id="@+id/ET2"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/TV2"
+            android:layout_toRightOf="@+id/TV2"
+            android:layout_marginLeft="10dp"/>
+        <Button
+            android:id="@+id/bt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ET2"
+            android:layout_toRightOf="@+id/ET2"
+            android:text="获取验证码"
+            android:textSize="16dp"
+            android:textColor="#ffffff"
+            android:background="#01ACED"/>
+
+        <Button
+            android:layout_centerHorizontal="true"
+            android:id="@+id/bt2"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bt1"
+            android:layout_marginTop="30dp"
+            android:text="下一步"
+            android:background="#01ACED"
+            android:textColor="#ffffff"
+            android:textSize="18dp"/>
+    </RelativeLayout>
+</RelativeLayout>

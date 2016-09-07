@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/edit_album"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@null"
+        android:drawableLeft="@mipmap/editor"
+        android:gravity="center"
+        android:paddingLeft="25dp"
+        android:text="编辑相册信息"
+        android:textColor="#2c2c2c"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/edit_manage_photo"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@null"
+        android:drawableLeft="@mipmap/manage"
+        android:gravity="center"
+        android:paddingLeft="25dp"
+        android:text="管理照片"
+        android:textColor="#2c2c2c"
+        android:textSize="20sp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/edit_big_photo"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@null"
+        android:drawableLeft="@mipmap/big_view"
+        android:gravity="center"
+        android:paddingLeft="25dp"
+        android:text="大图浏览"
+        android:textColor="#2c2c2c"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/edit__small_photo"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@null"
+        android:drawableLeft="@mipmap/small_view"
+        android:gravity="center"
+        android:paddingLeft="25dp"
+        android:text="小图浏览"
+        android:textColor="#2c2c2c"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/edit__upload_photos"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@null"
+        android:drawableLeft="@mipmap/photo_upload"
+        android:gravity="center"
+        android:paddingLeft="25dp"
+        android:text="上传图片"
+        android:textColor="#2c2c2c"
+        android:textSize="20sp" />
+
+</LinearLayout>

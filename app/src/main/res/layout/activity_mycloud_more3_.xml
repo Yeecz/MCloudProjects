@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.yee.mcloudprojects.activity.Mycloud_more3_Activity">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:id="@+id/cloudsea_top"
+        android:gravity="center"
+        android:background="#01aced"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true">
+        <ImageButton
+            android:layout_weight="1"
+            android:id="@+id/backbutton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:src="@drawable/back1" />
+        <TextView
+            android:textColor="@color/btn_fab_white"
+            android:id="@+id/text_in"
+            android:gravity="center"
+            android:layout_weight="9"
+            android:layout_height="40dp"
+            android:layout_width="wrap_content"
+            android:textSize="18sp"
+            android:text="动态权限设置"/>
+        <TextView
+            android:id="@+id/text_i2"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/cloudsea_top"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+     <LinearLayout
+        android:background="#FFFFFF"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_weight="6"
+            android:textColor="@color/smssdk_black"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:textSize="18sp"
+            android:text="不让他看到我的动态"/>
+
+         <CheckBox
+             android:layout_weight="5"
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:id="@+id/checkBox" />
+
+     </LinearLayout>
+        <LinearLayout
+            android:background="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:layout_weight="6"
+                android:textColor="@color/smssdk_black"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:textSize="18sp"
+                android:text="不接受他的动态推送"/>
+
+            <CheckBox
+                android:layout_weight="5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/checkBox2" />
+
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

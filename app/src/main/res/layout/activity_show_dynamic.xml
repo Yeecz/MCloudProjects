@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/show_dynamic_body"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yee.mcloudprojects.activity.ShowDynamicActivity">
+
+    <RelativeLayout
+        android:id="@+id/dynamic_top"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/cloudsea_topbar">
+
+        <ImageButton
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:id="@+id/dynamic_top_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:src="@drawable/userinfo_tabicon_back"/>
+
+        <TextView
+            android:id="@+id/dynamic_top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="正文"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/show_dynamic_del"
+            style="@style/history_btn_add"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除"/>
+
+    </RelativeLayout>
+
+    <com.example.yee.mcloudprojects.PullToRefreshLayout
+        android:layout_below="@id/dynamic_top"
+        android:id="@+id/dynamic_comment_pulltorefresh"
+        android:layout_width="match_parent"
+        android:layout_height="525dp">
+
+        <include layout="@layout/refresh_head"/>
+
+        <com.example.yee.mcloudprojects.pullableview.LoadMoreListView
+            android:id="@+id/dynamic_comment_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></com.example.yee.mcloudprojects.pullableview.LoadMoreListView>
+
+        <include layout="@layout/load_more"/>
+    </com.example.yee.mcloudprojects.PullToRefreshLayout>
+
+
+    <FrameLayout
+        android:id="@+id/dynamic_footerview"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <RelativeLayout
+            android:id="@+id/dynamic_footer"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/blockdivide">
+
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/dynamic_footer_reply"
+                android:drawableLeft="@drawable/history_btn_function_retweet"
+                android:text="20"
+                style="@style/dynamic_footer_btn" />
+
+            <Button
+                android:id="@+id/dynamic_footer_comment"
+                android:drawableLeft="@drawable/history_btn_function_chat"
+                android:text="20"
+                android:layout_marginLeft="80dp"
+                android:layout_alignParentLeft="true"
+                style="@style/dynamic_footer_btn"/>
+
+            <Button
+                android:id="@+id/dynamic_footer_like"
+                android:drawableLeft="@drawable/history_btn_function_zan"
+                android:text="20"
+                android:layout_marginRight="80dp"
+                android:layout_alignParentRight="true"
+                style="@style/dynamic_footer_btn"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/dynamic_footer_commentView"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/blockdivide"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/dynamic_footer_commentView_content"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:hint="回复："
+                android:singleLine="true"
+                android:maxLength="50"/>
+
+            <Button
+                android:id="@+id/dynamic_footer_commentView_submit"
+                style="@style/history_btn_add"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="发送"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/show_dynamic_viewpagerfragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></RelativeLayout>
+
+</RelativeLayout>
